@@ -1,0 +1,30 @@
+{
+  "name": "PE INSTRUTIVO",
+  "version": "1.0",
+  "description": "Manual interativo do PE INTEGRADO!",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+   "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+    
+  "page_action": {
+    "default_popup": "popup.html"
+    
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.peintegrado.pe.gov.br/*"],  
+      "css": [
+        "modulo.css"
+      ],
+      "all_frames": true,
+      "run_at": "document_idle",             
+      "js": [
+        "popup.js"       
+      ]
+    }
+  ], 
+  
+  "manifest_version": 2
+}

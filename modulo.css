@@ -1,0 +1,37 @@
+body {
+	width: 500px;
+	margin: 20px;
+	font-size: 0.75em!important;
+}
+
+button {
+ 	align-items: flex-end!important;
+ }
+
+h3, li {
+	
+	font-family: "Courier New", "Monaco", "monospace";
+	margin-top: 10px;
+	line-height: 1.5em;
+
+}
+
+li a {
+	color: black;
+	text-decoration: none;
+}
+
+
+
+.lista {	
+	margin: 20px;
+	margin-right: 200px;
+}
+
+.subtopicos {
+	display: block;
+}
+/*
+#subtopicos-primeiro {
+	display: block;
+} */
